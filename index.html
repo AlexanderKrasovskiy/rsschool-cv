@@ -5,10 +5,115 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CV - Alexander Krasovskiy</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="wrapper">
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#code">Code</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#english">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container main-container">
+      <section class="section section-profile">
+        <img class="section-profile-avatar" src="./assets/img/my-photo.jpg" alt="My profile photo" height="200">
+        <div class="section-profile-title">
+          <h1 class="section-title main-title">Alexander Krasovskiy</h1>
+          <h3 class="section-subtitle"><span>&lt; </span>Junior Web Developer<span> /&gt;</span></h3>
+        </div>
+      </section>
+      <section class="section section-contacts" id="contacts">
+        <h2 class="section-title">Contacts</h2>
+        <ul class="section-list">
+          <li class="section-item">Russia, Ekaterinburg</li>
+          <li class="section-item">GitHub: <a href="https://github.com/AlexanderKrasovskiy" target="_blank" title="github">AlexanderKrasovskiy</a></li>
+          <li class="section-item">Telegram: <a href="tel:+7-912-265-01-21" title="telegram">+7 (912) 265-01-21</a></li>
+          <li class="section-item">Email: <a href="mailto:fuxik2007@gmail.com" title="email">fuxik2007@gmail.com</a></li>
+          <li class="section-item">Discord: <a href="#" title="discord">Alex (@AlexanderKrasovskiy)</a></li>
+        </ul>
+      </section>
+      <section class="section section-summary" id="summary">
+        <h2 class="section-title">Summary</h2>
+        <p>Hi there!) I'm Alex, ex-auditor. I left my job to study Front-End and change careers. Quiting was a hard decision, so I hope to succeed in FE Development)</p>
+      </section>
+      <section class="section section-skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul class="section-list">
+          <li class="section-item">Fundamentals: <span>HTML, CSS, JS</span></li>
+          <li class="section-item">Libraries: <span>React</span></li>
+          <li class="section-item">Version Control: <span>Git, GitHub</span></li>
+          <li class="section-item">Tools: <span>VS Code</span></li>
+        </ul>
+      </section>
+      <section class="section section-code" id="code">
+        <h2 class="section-title">Code Example</h2>
+<pre class="pre"><code>const uniqueInOrder = function(iterable){
+  let arr = [...iterable]
+  let result = arr.slice(0,1)
+
+  for (let i of arr) {
+    let last = result[(result.length-1)]
+    if (i !== last) {
+      result.push(i)
+    }
+  }
+  return result
+}</code></pre>
+      </section>
+      <section class="section section-courses" id="courses">
+        <h2 class="section-title">Courses</h2>
+        <ul class="section-list">
+          <li class="section-item">CS50 lectures on YouTube</li>
+          <li class="section-item"><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> - <span>HTML, CSS, JS</span></li>
+          <li class="section-item"><a href="https://www.udemy.com/" target="_blank">Udemy</a> - <span>Web Development, React</span></li>
+        </ul>
+      </section>
+      <section class="section section-projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <p>Most of my previous pet-projects are not deployed, because I did not know Git(( So, currently I can only show this CV</p>
+        <ul class="section-list">
+          <li class="section-item"><a href="https://alexanderkrasovskiy.github.io/rsschool-cv/" target="_blank">My CV Project</a></li>
+        </ul>
+      </section>
+      <section class="section section-education" id="education">
+        <h2 class="section-title">Education</h2>
+        <p>Ural State Federal University - Economics</p>
+      </section>
+      <section class="section section-english" id="english">
+        <h2 class="section-title">English</h2>
+        <p>According to <a href="https://www.efset.org/cert/qJezC7" target="_blank">efset.org</a> my English is <span>C1 (Advanced)</span>, but I suppose it to be closer to <span>Upper-Intermediate</span></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-copyright">© 2022 by Alexander Krasovskiy</div>
+      <div class="footer-links-container">
+        <a class="footer-links github" href="https://github.com/AlexanderKrasovskiy" target="_blank"></a>
+        <a class="footer-links rss" href="https://rs.school/js-stage0/" target="_blank"></a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
